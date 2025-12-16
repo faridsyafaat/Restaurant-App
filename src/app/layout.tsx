@@ -1,7 +1,7 @@
-// src/app/layout.tsx
 import React from 'react';
-import { SearchProvider } from '@/context/SearchContext';
-import './globals.css'; // tetap bisa diimport jika ada
+import { SearchProvider } from '@/context/SearchProvider';
+
+import './globals.css';
 
 interface RootLayoutProps {
   children: React.ReactNode;
