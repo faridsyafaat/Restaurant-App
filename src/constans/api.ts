@@ -1,0 +1,2 @@
+export const BASE_URL =
+  'https://restaurant-be-400174736012.asia-southeast2.run.app';
