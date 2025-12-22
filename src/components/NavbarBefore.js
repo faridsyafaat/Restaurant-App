@@ -1,0 +1,9 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Menu } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+export default function NavbarBefore() {
+    const [isOpen, setIsOpen] = useState(false);
+    return (_jsxs("nav", { className: 'sticky top-0 z-50 w-full bg-black shadow-sm', children: [_jsxs("div", { className: 'max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between', children: [_jsx("img", { src: '/image/logo.png', alt: 'Logo', className: 'w-[149px] h-[42px] object-contain' }), _jsxs("div", { className: 'hidden sm:flex gap-3', children: [_jsx(Link, { to: '/login', children: _jsx(Button, { variant: 'outline', className: 'w-[163px] h-[48px] !bg-transparent border-2 !border-white text-white\r\n             hover:!bg-white hover:!text-black transition', children: "Sign In" }) }), _jsx(Link, { to: '/register', children: _jsx(Button, { variant: 'outline', className: 'w-[163px] h-[48px] bg-white text-black border-2 !border-white \r\n                         hover:bg-transparent hover:text-white transition', children: "Sign Up" }) })] }), _jsx("button", { onClick: () => setIsOpen(!isOpen), className: 'sm:hidden text-white', children: _jsx(Menu, { size: 28 }) })] }), isOpen && (_jsxs("div", { className: 'sm:hidden bg-black px-6 py-4 flex flex-col gap-3 shadow-md', children: [_jsx(Link, { to: '/login', children: _jsx(Button, { variant: 'outline', className: 'w-full border-2 !bg-transparent !border-white text-white\r\n             hover:!bg-white hover:!text-black transition', children: "Sign In" }) }), _jsx(Link, { to: '/register', children: _jsx(Button, { variant: 'outline', className: 'w-full bg-white text-black border-2 !border-white \r\n                         hover:bg-transparent hover:text-white transition', children: "Sign Up" }) })] }))] }));
+}

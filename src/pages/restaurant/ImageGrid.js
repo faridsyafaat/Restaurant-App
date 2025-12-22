@@ -1,0 +1,4 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+export default function ImageGrid({ images }) {
+    return (_jsxs("div", { className: "px-4 mt-6 flex gap-4 container-custom", children: [_jsx("div", { children: _jsx("img", { src: images?.[0], className: "rounded-2xl object-cover", style: { width: 651, height: 470 } }) }), _jsxs("div", { className: "flex flex-col gap-4", children: [_jsx("img", { src: images?.[1] || images?.[0], className: "rounded-2xl object-cover", style: { width: 529, height: 302 } }), _jsxs("div", { className: "flex gap-4", children: [_jsx("img", { src: images?.[2] || images?.[0], className: "rounded-2xl object-cover", style: { width: 254.5, height: 148 } }), _jsx("img", { src: images?.[3] || images?.[0], className: "rounded-2xl object-cover", style: { width: 254.5, height: 148 } })] })] })] }));
+}

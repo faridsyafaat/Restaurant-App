@@ -1,6 +1,5 @@
 import React from 'react';
 import { SearchProvider } from '@/context/SearchProvider';
-
 import './globals.css';
 
 interface RootLayoutProps {
